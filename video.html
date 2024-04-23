@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video.html</title>
+  <link rel="stylesheet" href="css/video.css">
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <script defer src="js/video.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+</head>
+
+<body>
+  <!-- <div class="header">
+    <button onclick="goBack()">← 이전 페이지로</button>
+    <h2>브런치 쿠킹 클래스</h2>
+    <div></div>
+  </div> -->
+  <div class="wrapper">
+    <div class="video-container">
+      <video controls crossorigin playsinline poster="" id="player" width="100%" height="720px">
+        <!-- Video files -->
+        <source src="video\BrunchCookingClassCr.mp4" type="video/mp4" id="videoSource">
+
+        <!-- Fallback for browsers that don't support the <video> element -->
+        <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+      </video>
+    </div>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">FLOTEACH</span>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">FLOTEACH</span>
+        </div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">1.오리엔테이션</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="link">2.재료소개</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">3.재료손질</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">4.조리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-pie-chart-alt-2 icon"></i>
+                <span class="link">5.플레이팅</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">6.시식 및 정리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-folder-open icon"></i>
+                <span class="link">이전 페이지로</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="navbar">
+      <a href="#home" id="home1">강의 목차</a><a href="#about" id="about1">노트</a>
+      <div class="main2_1">
+        <div>
+          <h3>요리 만들기</h3>
+          <div> 기본기
+            <ul class="main_ul">
+              <li>1.오리엔테이션</li>
+              <li>2.세팅하기</li>
+              <li>3.재료소개</li>
+              <li>4.파스타</li>
+              <li>5.초밥</li>
+              <li>6.플레이팅</li>
+              <li>7.시식 및 정리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main2_2">
+        <div id="notetab">
+          <fieldset>
+            <textarea placeholder="내용을 입력해 주세요"></textarea><br>
+            <input type="button" value="노트 작성" name="notesubmit" id="notebutton" />
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+  </div>-->
+  <footer>
+    <ul class="footer_ul">
+      <li><a href="#modal01" class="btn-open">공지사항</a></li>
+      <li class="btn-open"><a href="#modal02" class="btn-open">강의 소개</a></li>
+      <li class="btn-open"><a href="#modal03" class="btn-open">강사 소개</a></li>
+      <li class="btn-open"><a href="#modal04" class="btn-open">강의 자료</a></li>
+    </ul>
+  </footer>
+  <div class="modal-bg" onClick="javascript:popClose();"></div>
+  <div id="modal01" class="modal-wrap">
+    <h2>공지사항</h2>
+    수강기간이란 회사가 회원에게 유상으로 제공하는 클래스 이용기간으로서 90일을 의미합니다.
+    단, 개별 클래스에 따라 90일 미만의 수강기간이 제공될 수 있습니다.
+  </div>
+  <div class="modal-bg" onClick="javascript:popClose();"></div>
+  <div id="modal02" class="modal-wrap">
+    <h2>강의 소개</h2>
+    브런치 쿠킹 클래스: 나를 위한 특별한 브런치 만들기!<br>
+    레벨 : 초보 가능
+    <br>
+    시간 : 20분
+  </div>
+  <div class="modal-bg" onClick="javascript:popClose();"></div>
+  <div id="modal03" class="modal-wrap">
+    <h2>강사 소개</h2>
+    선생님 : 마리오 프레시코
+  </div>
+  <div class="modal-bg" onClick="javascript:popClose();"></div>
+  <div id="modal04" class="modal-wrap">
+    <h2>강의 자료</h2>
+    <a href="img/bahama-mom-829468_1280.jpg" download style="color: black;">레시피</a>
+  </div> 
+
+
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+
+  <!-- 로그인 관련 -->
+  <script defer src="js/sessionlogin.js"></script>  
+</head>
+
+<body>
+  <header>
+    <div class="Title"><img src="img/logotypo.png" alt="logo" width="160px" onclick="redirectToSite()"></div>
+    <div class="searchbar"><input type="text" name="searchbox" id="searchbar__main" placeholder="검색어를 입력해주세요"><span
+        class="material-symbols-outlined">
+        search
+      </span></div>
+    <div id="header__login">
+      <div><a href="login.html" class="loginlink">로그인</a>
+        <a class="loginlink">회원가입</a>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <ul class="nav__menu">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          카테고리
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item active" href="index.html">요리</a></li>
+          <li><a class="dropdown-item" href="#">베이킹</a></li>
+          <li><a class="dropdown-item" href="#music">음악</a></li>
+          <li><a class="dropdown-item" href="#">사진 & 영상</a></li>
+          <li><a class="dropdown-item" href="#exercise">운동</a></li>
+          <li><a class="dropdown-item" href="#drawing">공예</a></li>
+          <li><a class="dropdown-item" href="#">재테크</a></li>
+          <li><a class="dropdown-item" href="#languge">외국어</a></li>
+          <li><a class="dropdown-item" href="#">디자인</a></li>
+          <li><a class="dropdown-item" href="#programing">프로그래밍</a></li>
+          <li><a class="dropdown-item" href="#">라이프스타일</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="semi_event.html">이벤트</a></li>
+          <li><a class="dropdown-item">마이페이지</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+          <li><a class="dropdown-item" href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+      <li><a href="index.html" class="padingtest">요리</a></li>
+      <li><a href="#drawing" class="padingtest">창작</a></li>
+      <li><a href="#music" class="padingtest">음악</a></li>
+      <li><a href="#languge" class="padingtest">외국어</a></li>
+      <li><a href="#exercise" class="padingtest">운동</a></li>
+      <li><a href="#programing" class="padingtest">프로그래밍</a></li>
+      <li><a href="semi_event.html" class="padingtest">이벤트</a></li>
+    </ul>
+  </nav>
+  <!-- 카테고리 시작 -->
+  <!-- 메인 슬라이더 -->
+  <div class="slider_nav">
+    <div class="slide_nav current">
+      <div class="content">
+        <h1>브런치 만들기</h1>
+        <p>
+          아침과 점심을 잇는 브런치, 그 속에는 특별한 맛과 감성이 담겨있습니다.
+          플로티치에서는 특별한 브런치를 직접 만들어보고 싶은 분들을 위한 아름다운 브런치 만들기 강의를 마련했습니다.
+        </p>
+      </div>
+    </div>
+    <div class="slide_nav">
+      <div class="content">
+        <h1>함께 시작하는 HTML</h1>
+        <p>
+          홈페이지 만들기에 대해 호기심이 있지만 시작하기가 어렵다고 느끼시나요? 
+          플로티치에서는 누구나 쉽고 재미있게 배울 수 있는 HTML 기초 강의를 마련했습니다.
+        </p>
+      </div>
+    </div>
+    <div class="slide_nav">
+      <div class="content">
+        <h1>재미있는 음악교실</h1>
+        <p>
+          음악을 만들고 싶지만 어떻게 시작해야 할지 모르시나요?
+          플로티치에서는 누구나 쉽고 재미있게 배울 수 있는 음악 만들기 기초 강의를 준비했습니다.
+        </p>
+      </div>
+    </div>
+    <div class="slide_nav">
+      <div class="content">
+        <h1>인형만들기</h1>
+        <p>
+          솜씨 있는 손끝으로 아름다운 인형을 만들어보세요!
+          플로티치에서는 뜨개질로 만드는 귀여운 인형 만들기 강의를 선보입니다.
+        </p>
+      </div>
+    </div>
+    <div class="slide_nav">
+      <div class="content">
+        <h1>인생사진찍기!</h1>
+        <p><br>
+          사진 찍는 건 쉬운데, 잘 찍는 건 어려운 일일 수 있어요.
+          하지만 걱정 마세요! 플로티치에서는 누구나 쉽게 배울 수 있는 SNS 사진 촬영 강의를 준비했습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <button id="prev" style="display: none;"><i class="fas fa-arrow-left"></i></button>
+    <button id="next" style="display: none;"><i class="fas fa-arrow-right"></i></button>
+  </div>
+
+
+  <div class="main_category">
+    <ul class="main_category_ul">
+      <li><div class="imgcategory" data-type="circle"><img src="img/icons8-old-computer-52.png" alt=""></div>  </li>
+      <li> <div class="imgcategory" data-type="circle"><img src="img/icons8-video-52.png" alt=""></div> </li>
+      <li><div class="imgcategory" data-type="circle"><img src="img/icons8-book-52.png" alt="img-1"></div>  </li>
+      <li> <div class="imgcategory" data-type="circle"><img src="img/icons8-ping-pong-52.png" alt=""></div> </li>
+      <li> <div class="imgcategory" data-type="circle"><img src="img/icons8-paint-palette-52.png" alt=""></div> </li>
+      <li> <div class="imgcategory" data-type="circle"><img src="img/icons8-kitchenwares-52.png"></div> </li>
+    </ul>
+  </div>
+  <!-- 메인 시작 -->
+  <main>
+    <!-- 시작 카드 3개 -->
+    <div id="first_card">
+      <div data-js="hero-demo">
+          <h3 id="slider_title">EVENT</h3>
+        <ul class="grid">
+          <li class="element-item cat-1" id="flip">
+            <div class="front">
+              <img src="img/event01.png" alt="gallery-img">
+              <div class="front__textbox">
+                <h2>오픈기념 2차 이벤트</h2>
+                <p>오픈기념 2차 이벤트 진행중 지금 바로 참여하세요!</p>
+              </div>
+            </div>
+            <div class="back">
+              <h2>오픈기념 2차 이벤트</h2>
+              <p><br>직장인과 수험생을 위한 무료체험 지금 현재 진행 중<br><br>
+              수강후기 남겨주시면 더 큰 혜택이 주어집니다!</p>
+            </div>
+          </li>
+          <li class="element-item cat-2" id="flip2">
+            <div class="front">
+              <img src="img/event03.png" alt="gallery-img" style="height: 290px; width:100%;">
+              <div class="front__textbox">
+                <h2>요가 패키지 할인</h2>
+                <p>자세바로잡기 요가 3개월 패키지 이벤트</p>
+              </div>
+            </div>
+            <div class="back">
+              <h2>요가클래스</h2>
+              <p>
+              <br>
+              요가를 3개월 동안 꾸준히 실천하면 몸과 마음에 여러 가지 긍정적인 변화를 느낄 수 있어요!<br><br>
+              자세바로잡기 요가 3개월 패키지 20% 할인 이벤트 지금 바로 참여하세요!</p>
+            </div>
+          </li>
+          <li class="element-item cat-3" id="flip3">
+            <div class="front">
+              <img src="img/event02.jpg" alt="gallery-img" style="height: 290px; width:100%;">
+              <div class="front__textbox">
+                <h2>페이백 이벤트</h2>
+                <p>수강완료시 50% 환급</p>
+              </div>
+            </div>
+            <div class="back">
+              <h2>수강완료 페이백 이벤트</h2>
+              <p><br>여러분의 노력을 보상하는 시간입니다! 플로티치에서 수강 완료 시 50% 환급 이벤트를 준비했습니다.<br><br>
+              신규가입자 첫 강의를 신청하고 수업을 완료하시면 총 결제 금액의 50%를 환급해드립니다.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 시작 카드 3개 끝! -->
+    <!-- 애니 효과 있는 짤 -->
+    <div id="three__card">
+      <div class="slider__POP">
+        <h2>인기강의</h2>
+      </div>
+      <section class="hero-section">
+        <div class="card-grid">
+          <a class="card" href="detail.html">
+            <div class="card__background"
+              style="background-image: url(./img/food02.jpg)">
+            </div>
+            <div class="card__content">
+              <p class="card__category">요리</p>
+              <h3 class="card__heading">브런치 쿠킹 클래스</h3>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./img/d4.jpg)">
+            </div>
+            <div class="card__content">
+              <p class="card__category">창작</p>
+              <h3 class="card__heading">나만의 그릇만들기 클래스</h3>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./img/p4.jpg)">
+            </div>
+            <div class="card__content">
+              <p class="card__category">운동</p>
+              <h3 class="card__heading">자세교정 요가 클래스</h3>
+            </div>
+            </li>
+            <a class="card" href="#">
+              <div class="card__background"
+                style="background-image: url(./img/pr2.png)">
+              </div>
+              <div class="card__content">
+                <p class="card__category">프로그래밍</p>
+                <h3 class="card__heading">입문 홈페이지만들기 클래스</h3>
+              </div>
+            </a>
+            <div>
+      </section>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="photobanner">
+        <img class="first" src="./img/c1.jpg" alt="" />
+        <img src="./img/c2.jpg " alt="" />
+        <img src="./img/c3.jpg " alt="" />
+        <img src="./img/d1.jpg " alt="" />
+        <img src="./img/d2.jpg " alt="" />
+        <img src="./img/d3.jpg " alt="" />
+        <img src="./img/guitar-5531027_1920.jpg " alt="" />
+        <img src="./img/k1.jpg " alt="" />
+        <img src="./img/f3.jpg " alt="" />
+      </div>
+    </div>
+
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  
+  <div id="container">
+    <h3 class="title_price"> 정기 구독 </h3>
+    <div class="pricetab">
+      <h1 class="h1"> FREE </h1>
+      <div class="price"> 
+        <h2 class="h2"> Free </h2> 
+      </div>
+      <div class="infos">
+        <h3 class="h3"> 체험 영상을 마음대로 시청 가능합니다 </h3>
+        <h3 class="h3"> 무료 강의를 자유롭게 들을 수 있습니다 </h3>
+        <h3 class="h3"> 추가혜택 </h3>
+        <h3 class="h3"> 0 개의 추천 강의를 받습니다</h3>
+        <h3 class="h3"> 전문가의 조언은 아쉽게도 들을수 없습니다</h3>
+        <h3 class="h3"> 결제 X</h3>
+      </div>
+      <div class="pricefooter">
+        <div class="button">
+          <a href="#"> Get started </a>
+        </div>
+      </div>
+    </div>
+    <div class="pricetab">
+      <h1 class="h1"> STARTER </h1>
+      <div class="price"> 
+        <h2 class="h2"> 10$ </h2> 
+      </div>
+      <div class="infos">
+        <h3 class="h3"> 강의를 위한 스타터 팩 </h3>
+        <h3 class="h3"> 한달에 유료강의를 1개 무료로 들을 수 있습니다 </h3>
+        <h3 class="h3"> 추가혜택 </h3>
+        <h3 class="h3"> 5 개의 추천강의를 받습니다</h3>
+        <h3 class="h3"> 전문가의 조언을 들을 수 있습니다</h3>
+        <h3 class="h3"> 1달 결제</h3>
+      </div>
+      <div class="pricefooter">
+        <div class="button">
+          <a href="#"> Get started </a>
+        </div>
+      </div>
+    </div>
+    <div class="pricetabmid">
+      <h1 class="h1"> BASIC </h1>
+      <div class="pricemid"> 
+        <h2 class="h2"> 30$ </h2> 
+      </div>
+      <div class="infos">
+        <h3 class="h3"> 가성비 좋은 베이직 팩 </h3>
+        <h3 class="h3"> 한달에 유료강의 5개를 무료로 들을 수 있습니다 </h3>
+        <h3 class="h3"> 추가혜택 </h3>
+        <h3 class="h3"> 20 개의 추천강의를 받습니다</h3>
+        <h3 class="h3"> 전문가의 조언을 들을 수 있습니다</h3>
+        <h3 class="h3"> 6달 결제</h3>
+      </div>
+      <div class="pricefootermid">
+        <div class="buttonmid">
+          <a href="#"> Get started </a>
+        </div>
+      </div>
+    </div>
+    <div class="pricetab">
+      <h1 class="h1"> PREMIUM </h1>
+      <div class="price"> 
+        <h2 class="h2"> 50$ </h2> 
+      </div>
+      <div class="infos">
+        <h3 class="h3"> 프리미엄 팩 </h3>
+        <h3 class="h3"> 한달에 유료강의 10개를 무료로 들을 수 있습니다 </h3>
+        <h3 class="h3"> 추가혜택 </h3>
+        <h3 class="h3"> 30 개의 추천강의를 받습니다</h3>
+        <h3 class="h3"> 전문가의 조언을 들을 수 있습니다</h3>
+        <h3 class="h3"> 1 년 결제</h3>
+      </div>
+      <div class="pricefooter">
+        <div class="button">
+          <a href="#"> Get started </a>
+        </div>
+      </div>
+    </div>
+    <div class="pricetab">
+      <h1 class="h1"> VIP </h1>
+      <div class="price"> 
+        <h2 class="h2"> 100$ </h2> 
+      </div>
+      <div class="infos">
+        <h3 class="h3"> 최고급 팩 </h3>
+        <h3 class="h3"> 모든 강의 무료 </h3>
+        <h3 class="h3"> 추가혜택 </h3>
+        <h3 class="h3"> 50 개의 추천강의를 받습니다</h3>
+        <h3 class="h3"> 전문가의 조언을 들을 수 있습니다</h3>
+        <h3 class="h3"> 2 년 결제</h3>
+      </div>
+      <div class="pricefooter">
+        <div class="button">
+          <a href="#"> Get started </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </main>
+
+
+  <!-- footer시작 -->
+  <footer>
+    <div class="footertest">
+        <ul class="footer__info">
+            <li class="footer_title">고객센터</li>
+            <li>10:00~18:30</li>
+            <li>주말,공유일 휴무</li>
+            <li><input type="button" value="1:1문의" id="footer__button" /></li>
+        </ul>
+        <ul class="footer__info">
+            <li class="footer_title">플로티치</li>
+            <li><a href="main.html">플로티치 메인</a></li>
+            <li><a href="semi_event.html">이벤트</a></li>
+            <li><a href="login.html">로그인</a></li>
+        </ul>
+        <ul class="footer__info">
+            <li class="footer_title">관련 사이트</li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">GIT</a></li>
+            <li><a href="#">유튜브</a></li>
+            <li><a href="#">KH</a></li>
+        </ul>
+        <ul class="footer__info">
+            <li class="footer_title">지원</li>
+            <li><a href="announcement.html">공지사항</a></li>
+            <li><a href="FAQ.html">자주 묻는 질문</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">전문가 센터</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="reserve">
+        KDH서울시 강남구 역전로로 157, 100층대표 : OOO, OOO 개인정보관리책임자 : OOO 이사업자등록번호 : 111-11-11111<br>
+        통신판매업신고 : 1111-서울강남-1111 유료직업소개사업등록번호 : 제1111-1111111-11-1-111111호고객센터 : 1544-1544help@flowteach.com
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'JalnanGothic';
+    margin: 0;
+    padding: 0;
+    
+}
+/* top-writer-ranking  */
+.top_writers_container {
+    position: absolute;
+    top: 850px;
+    left: 10px;
+    margin-bottom: 800px;
+    width: 250px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateX(0);
+}
+
+.ranking_title {
+    box-sizing: content-box;
+    padding-top: 30px;
+    padding-left: 20px;
+  line-height:100%;
+    color: #333236;
+    width: 85%;
+    height: 56px;
+    border: none;
+   
+   font-size: 1.5rem;
+   background-color: #faf9f9;
+}
+
+.item_container,
+.item_container_color {
+    display: grid;
+    grid-template-areas:
+        "number  name answer"
+        "number  level answer";
+    grid-template-columns: 3.2rem 3.2rem 3.8rem auto 5rem;
+    align-items: center;
+    padding: 0.55rem 2.5rem 0.65rem 2.2rem;
+   
+    border: none;
+    box-sizing: border-box;
+
+}
+
+.number,
+.number_color {
+    width: 22px;
+    height: 22px;
+    grid-area: number;
+    border: none;
+}
+
+
+
+.item_name,
+.item_name_color {
+    border: none;
+    grid-area: name;
+    display: flex; 
+    align-items: center; 
+}
+
+.item_name_level,
+.item_name_level_color {
+    border: none;
+    grid-area: level;
+    text-align: center; 
+}
+
+.item_answer,
+.item_answer_color {
+    border: none;
+    grid-area: answer;
+    text-align: right; 
+}
+
+
+.item_container_medal,
+.item_container_medal_color {
+    display: grid;
+    grid-template-areas:
+        "medal name  answer"
+        "medal level  answer";
+    grid-template-columns: 3.2rem 3.8rem auto auto 5rem;
+    align-items: center;
+    padding: 0.55rem 2.5rem 0.65rem 2.2rem;
+    
+    border: none;
+    box-sizing: border-box;
+}
+
+.number_medal,
+.number_medal_color {
+    width: 22px;
+    height: 22px;
+    grid-area: number;
+    border: none;
+}
+
+.item_container_medal .medal,
+.item_container_medal_color .medal {
+    width: 22px;
+    height: 22px;
+    grid-area: medal;
+    border: none;
+}
+.item_name .item_levle{
+    width: 60px;
+    border: none;
+}
+.item_container_medal_color .item_name{
+    width: 60px;
+    border: none;
+}
+ .item_answer{
+    width: 70px;
+    border: none;
+}
+.item_answer{
+    margin-left: 20px;
+    border: none;
+}
+.item_container_medal .item_name{
+    width: 60px;
+    border: none;
+}
+
+.item_container_medal_color{
+    background-color: #faf9f9;
+}
+.item_container_color{
+    background-color: #faf9f9;
+}

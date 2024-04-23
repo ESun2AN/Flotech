@@ -1,0 +1,379 @@
+/* 폰트 */
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header */
+header{
+    font-family: 'JalnanGothic';
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    
+}
+.Title{
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+
+/* 검색 바 */
+
+.searchbar{
+    border:3px solid  #2a69fa;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    margin-left: 180px;
+    height: 40px;
+    width: 500px;
+  }
+
+#searchbar__main{
+    width: 600px;
+    border-radius: 60px;
+    border:none;
+    outline:none;
+}
+.material-symbols-outlined{
+    color: #2a69fa;
+
+}
+
+
+/* header 로그인/회원가입 */
+#header__login{
+    display: flex;
+    margin-left: 300px;
+}
+.loginlink{
+    margin-left: 10px;
+    color: white;
+}
+.loginlink:nth-child(2){
+    border: 2px solid #2a69fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+.loginlink:nth-child(2):hover{
+    background-color: #2a69fa;
+    color: white;
+}
+
+/* nav */
+.btn{
+    
+    background-color: black;
+}
+.dropdown{
+    padding-top: 0px;
+}
+.dropdown-menu, dropdown-item{
+    
+    background-color: black;
+}
+nav{
+    
+    margin-top:10px;
+    height: 50px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+}
+.nav__menu{
+    font-family: 'JalnanGothic';
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.padingtest01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.padingtest{
+    
+    color: white;
+    
+  }
+ .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+
+
+
+
+/* body */
+
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Limelight&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cols: 3;
+  --animation-len: 3s;
+}
+
+body {
+
+  width: 100%;
+}
+
+.console {
+  
+  position: relative;
+  background-color:black;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke-color: #2a69fa;
+  -webkit-text-stroke-width: 2px;
+
+  filter: drop-shadow(0 0 2px #2a69fa);
+  font-size: calc(30dvw / var(--cols));
+  line-height: 1;
+
+  font-family: Limelight, "Cutive Mono", sans-serif;
+
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.name:nth-of-type(even) {
+  animation: scroll-up;
+  animation-duration: var(--animation-len);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.name:nth-of-type(odd) {
+  transform: rotate(-180deg) translateY(33.33%);
+
+  animation: scroll-down;
+  animation-duration: var(--animation-len);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll-up {
+  to {
+    transform: translateY(-33.33%);
+  }
+}
+
+@keyframes scroll-down {
+  to {
+    transform: rotate(-180deg) translateY(0);
+  }
+}
+
+.btn__choice{
+font-size: 15px;
+justify-content: center;
+text-align: center;
+padding: 10px;
+margin-left: 60px;
+margin-top: 15px;
+margin-bottom: 50px;
+border-color: #2a69fa;
+border-radius: 5px;
+background-color: black;
+color: lightgray;
+
+}
+.btn__choice:hover{
+    background-color: #2a69fa;
+}
+
+.p__img {
+  
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+body{
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    
+}
+main{
+    font-family: 'JalnanGothic';
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    width: 1350px;
+    
+}
+.title{
+ 
+ margin:20px;
+ color: #2a69fa;
+}
+
+.video {
+    
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+    list-style: none;
+  
+}
+
+
+.project {
+    
+    position: relative;
+    border-radius: 20px;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: white;
+    
+}
+
+
+.p__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgb(165, 164, 164);
+}
+
+.project__metadata {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-in;
+    
+}
+
+.project__metadata:hover {
+    opacity: 0.8;
+    color: white;
+}
+.project__title{
+    color: #25A8FA;
+}
+
+/* 스크롤 맨위 버튼 */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    color: #2a69fa;
+    
+  background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* footer css */
+footer{
+    
+    height: 450px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    margin: 0 auto;
+    background-color: black;
+}
+.footertest{
+    font-family: 'JalnanGothic';
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1350px;
+
+}
+.footer_title{
+    font-weight: bolder;
+    font-size: larger;
+}
+.footer__info{
+    margin-top: 30px;
+    list-style: none;
+}
+.ftli{
+    padding-top: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.loginlink:hover{
+    text-decoration: underline 3px #2a69fa;
+}
+.reserve{
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: black;
+}
+#footer__button{
+    border:3px solid #2a69fa;
+    background-color: black;
+    color: #2a69fa;
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
+}
+#footer__button:hover{
+    border:3px solid #2a69fa;
+    background-color: #2a69fa;
+    color: white;
+    border-radius: 3px;
+}
+ul{
+    list-style: none;
+}

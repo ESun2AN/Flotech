@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* nav */
+.btn{
+    
+    background-color: black;
+}
+.dropdown{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu, dropdown-item{
+        
+    background-color: black;
+}
+
+nav{
+    
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+
+}
+
+.nav__menu{
+  font-family: 'JalnanGothic';
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.padingtest01{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.padingtest{
+ 
+    color: white;
+    
+  }
+ .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+
+
+  /* 마이페이지 수강 중 강의 시작 */
+body{
+    padding-top: 70px;
+    background-color: black;
+    margin: 0px;
+    color: white;
+}
+
+.mypage01{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 500px;
+    background-color: black;
+    color:white;
+    padding: 30px;
+    
+}
+.mypage01__{
+    width:700px;
+    /* height:361.450px; */
+    /* height: 97.75px; */
+    margin-bottom: 15px;
+}
+.mypage01__head{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+/* .mypage02__main{
+    width: 556.725px;
+    height: 158.800px;
+    margin-top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+} */
+.mypage01__main__1{
+    margin-top: 20px;
+}
+.mypage01__head__click{
+    font-weight: bold;
+}
+.mypage01__head__click:hover{
+    text-decoration: none;
+}
+
+#mypage01_cl{
+    color: white;
+}
+
+#mypage01_cl2{
+    color: #2a69fa;
+}
+.card-img-top_1{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-text_1{
+    font-size: 15px;
+    color: white;
+}
+.card-text_1:hover{
+    text-decoration: none;  
+    opacity: 0.8;
+    
+}
+
+
+#mypage01_card{
+    width: 650px;
+    display: flex;
+    margin-top: 15px;
+    gap:30px;
+    text-align: center;
+    color:black;
+}
+#mypage01__img{
+    border-radius: 5px;
+}
+
+/* 스크롤버튼 css */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    color: #2a69fa;
+    
+  background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

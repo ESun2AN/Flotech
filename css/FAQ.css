@@ -1,0 +1,169 @@
+/* 폰트 */
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'JalnanGothic';
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    height: 100%;
+    font-size: 18px;
+    color: black;
+    left: 1.6em;
+    font-weight: 300;
+    background-color: black;
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+
+    background-color: black;
+
+}
+
+.dropdown {
+    padding-top: 10px;
+}
+
+nav {
+    margin-top: 0px;
+    height: 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    margin-top: 100px;
+
+}
+
+.nav__menu {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 0px;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.padingtest {
+    color: white;
+    margin-bottom: 100px;
+}
+
+.padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+}
+
+/* FAQ시작 */
+
+.FAQ {
+    height: 1813px;
+    background-color: black;
+    color: white;
+
+}
+
+.FAQ_content {
+    height: 100vh;
+    width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.FAQ_content h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 150px;
+}
+
+.FAQ_content h1 span {
+    margin-top: 50px;
+}
+/* 누르면 내려갔다 올라가는 슬라이드 */
+.accordion {
+    font-size: 26px;
+    position: relative;
+}
+/* 슬라이드 제목 */
+.accordion .title {
+    background-color: #303030;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.accordion .title i{
+    
+    position: absolute;
+    right: 0px;
+    margin-right: 30px;
+    transition: transform 0.1s ease-in-out;
+}
+.accordion .title i:active{
+    
+    position: absolute;
+    right: 0px;
+    margin-right: 30px;
+}
+/* 누르면 나오는 내용 */
+.accordion .content {
+    background-color: #303030;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+div.title:hover {
+    background-color: #3f3f3f;
+}
+
+.title {
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    align-items: center;
+   
+}
+
+div.content:hover {
+    background-color: #3f3f3f;
+}
+
+.content {
+    display: none;
+}
+/* 하단 설명 */
+.FAQ_content_footer {
+    display: block;
+    width: 840px;
+    height: 90px;
+    padding: 5rem;
+    color: white; 
+    text-align: center; 
+    background-color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 300px;
+
+   
+    }
+    .Question{
+        color: #2a69fa;
+    }
+    /*  회전 css */
+    .xi-plus-thin.xi-2x.rotated {
+        transform: rotate(45deg);
+    }

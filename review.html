@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ 자주묻는질문</title>
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script defer src="./JS/jquery-3.7.1.min.js"></script>
+    <script defer src="./JS/review.js"></script>
+    <link rel="stylesheet" href="./CSS/review.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="./CSS/scrollToTop.css">
+    <script defer src="./JS/scrollToTop.js"></script>
+    <a href="https://www.flaticon.com/kr/free-icons/-" title="고객 여정 아이콘">고객 여정 아이콘 제작자: Jagat Icon - Flaticon</a>
+    <a href="https://www.flaticon.com/kr/free-icons/" title="평가 아이콘">평가 아이콘 제작자: smashingstocks - Flaticon</a>
+    <a href="https://www.flaticon.com/kr/free-icons/" title="논평 아이콘">논평 아이콘 제작자: Freepik - Flaticon</a>
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+
+    <!-- 로그인 관련 -->
+    <script defer src="js/sessionlogin.js"></script>
+</head>
+
+<body>
+    <script>
+        AOS.init(); 
+    </script>
+
+    <header> 
+        <div class="Title"><img src="./img/logotypo.png" alt="logo" width="160px" onclick="redirectToSite()"></div>
+        <div class="searchbar"><input type="text" name="searchbox" id="searchbar__main" placeholder="검색어를 입력해주세요"><span
+                class="material-symbols-outlined">
+                search
+            </span></div>
+        <div id="header__login">
+            <div><a href="#" class="loginlink">로그인</a>
+                <a href="#" class="loginlink">회원가입</a>
+            </div>
+        </div>
+    </header>
+    <!-- 네비게이션 -->
+    <nav>
+        <ul class="nav__menu">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              카테고리
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="index.html">요리</a></li>
+              <li><a class="dropdown-item" href="#">베이킹</a></li>
+              <li><a class="dropdown-item" href="#music">음악</a></li>
+              <li><a class="dropdown-item" href="#">사진 & 영상</a></li>
+              <li><a class="dropdown-item" href="#exercise">운동</a></li>
+              <li><a class="dropdown-item" href="#drawing">공예</a></li>
+              <li><a class="dropdown-item" href="#">재테크</a></li>
+              <li><a class="dropdown-item" href="#languge">외국어</a></li>
+              <li><a class="dropdown-item" href="#">디자인</a></li>
+              <li><a class="dropdown-item" href="#programing">프로그래밍</a></li>
+              <li><a class="dropdown-item" href="#">라이프스타일</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="semi_event.html">이벤트</a></li>
+              <li><a class="dropdown-item">마이페이지</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="review.html">수강후기</a></li>
+            </ul>
+          </div>
+          <li><a href="index.html" class="padingtest">요리</a></li>
+          <li><a href="#drawing" class="padingtest">창작</a></li>
+          <li><a href="#music" class="padingtest">음악</a></li>
+          <li><a href="#languge" class="padingtest">외국어</a></li>
+          <li><a href="#exercise" class="padingtest">운동</a></li>
+          <li><a href="#programing" class="padingtest">프로그래밍</a></li>
+          <li><a href="semi_event.html" class="padingtest">이벤트</a></li>
+        </ul>
+      </nav>
+    <!-- 리뷰시작 -->
+    <section class="review">
+        <div class="review_title">
+            <h1>왜 플로티치를<br> 선택해야할까요?</h1>
+
+        </div>
+
+
+        <div class="review_title_produce">
+            <div class="card-group">
+                <div class="card">
+                    <img src="./img/target-4343262_640.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">성취도 증가 및 실력상승</h5>
+                        <p class="card-text">탄탄한 커리큘럼과 확실한<br> 강의력과 1대1처럼 느껴지는<br> 철저한 관리로
+                            여러분들의 성적상승을 책임집니다.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/woman-1931730_640.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">탄탄한 강사진</h5>
+                        <p class="card-text">다양한 분야 탄탄한 실력<br>훌륭한 강사진들이 여러분들을 기다립니다.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/virtual-7071998_640.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">훌륭한 화질 및 동영상</p>
+                        <p class="card-text"><small class="text-body-secondary">플로티치는 여러분들의 열정에 <br>
+                                방해가 되지않도록 좋은 화질과<br>동영상 끊김이 없는 인프라를<br> 갖추고있습니다.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 숫자 카운트 -->
+        <div class="wrapper">
+            <div class="container">
+                <img src="./img/free-icon-comment-2593491.png" />
+                <span id="review_number" data-val="305"></span>
+                <span class="text">리뷰수(백단위)</span>
+            </div>
+
+            <div class="container">
+                <img src="./img/free-icon-customer-journey-12472350.png" />
+                <span class="num" data-val="97.6">97.6%</span>
+                <span class="text">추가 수강율</span>
+            </div>
+
+            <div class="container">
+                <img src="./img/free-icon-customer-review-7073905.png" />
+                <span class="num" data-val="4.8">4.8</span>
+                <span class="text">평균 평점</span>
+            </div>
+        </div>
+        <!-- 실제 리뷰 시작 -->
+        <div class="review_content">
+            <h1>수강생들의 이야기</h1>
+            <div>
+                <p>
+                    <추천 리뷰>
+                </p>
+            </div>
+        </div>
+        <!-- 실제수강후기 박스 -->
+        <div class="review_container">
+            <div data-aos="flip-left" id="first" class="review_box">
+                <h3><img alt="Quote" loading="lazy" width="17" height="16" decoding="async" data-nimg="1"
+                        class="SprinterTestimonials_quotationMark__n4I1F" style="color:transparent"
+                        src="./img/캡처.JPG"><br><br>요리 수업을 수강하였습니다.<br> 계란후라이도 못하던 제가 요리에 흥미를 가지고 점점 많은것을 시도하는 저를
+                    볼수있었습니다. 이 수업을 듣고 밖에서 외식하지않고 스스로 만들어먹고있습니다. 너무 만족스럽습니다.<br><br><img id="img1_right"
+                        src="./img/회전캡쳐.JPG"><br><br>-수강생 김*주</h3>
+
+                <div class="Star_rating"><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span></div>
+            </div>
+            <div data-aos="flip-right" class="review_box">
+                <h3> <img src="./img/캡처.JPG"><br><br>저는 음악수업을 수강하였습니다.<br> 수강하기전에는 해본적이 없기에 돈이 아깝다고 생각하였습니다. 친구의 추천으로
+                    수강하게 되었는데 너무나도 만족스럽습니다. 자신감이 없었는데 강사님이 친절하게 알려주세요!<br><br><img id="img1_right" src="./img/회전캡쳐.JPG">
+                    <br><br>수강생 박*혁 </h3>
+                <div class="Star_rating"><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span></div>
+            </div>
+            <div data-aos="flip-left" class="review_box">
+                <h3><img src="./img/캡처.JPG"><br><br>체육관에 가서 뻘줌하게 있었던 기억이 있습니다. 초보자라서 괜히 쳐다보는것같고 방해하는것같고 눈치보게 되었는데 집에서
+                    온라인강의로 해서 너무 편해요. 강사님이 친절하게 잘가르쳐주시고 피드백도 빨라서 좋아요<br><br><img id="img1_right"
+                        src="/img/회전캡쳐.JPG"><br><br>수강생 이*근 </h3>
+                <div class="Star_rating"><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span></div>
+            </div>
+            <div data-aos="flip-right" class="review_box">
+                <h3><img src="./img/캡처.JPG"><br><br>회사를 다니면서 영어의 필요성을 느꼈습니다. 몇개의 패턴으로 계속 해서 제 일상과 관련해서 반복을 시켜줘서 재밌고
+                    익히기도 쉬웠습니다. 중금반도 개설이 된다면 반드시 수강하고싶을정도로 만족스럽습니다.<br><br><img id="img1_right" src="/img/회전캡쳐.JPG">
+                    <br><br>수강생 이*영
+                </h3>
+                <div class="Star_rating"><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span><span
+                        class="fa fa-star fa-2x checked"></span><span class="fa fa-star fa-2x checked"></span></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 스크롤 맨위 버튼 -->
+    <button id="scrollBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+            fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg></button>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footertest">
+            <ul class="footer__info">
+                <li class="footer_title">고객센터</li>
+                <li>10:00~18:30</li>
+                <li>주말,공유일 휴무</li>
+                <li><input type="button" value="1:1문의" id="footer__button" /></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">플로티치</li>
+                <li><a href="main.html">플로티치 메인</a></li>
+                <li><a href="semi_event.html">이벤트</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">관련 사이트</li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">GIT</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">KH</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">지원</li>
+                <li><a href="announcement.html">공지사항</a></li>
+                <li><a href="FAQ.html">자주 묻는 질문</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전문가 센터</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="reserve">
+            KDH서울시 강남구 역전로로 157, 100층대표 : OOO, OOO 개인정보관리책임자 : OOO 이사업자등록번호 : 111-11-11111<br>
+            통신판매업신고 : 1111-서울강남-1111 유료직업소개사업등록번호 : 제1111-1111111-11-1-111111호고객센터 : 1544-1544help@flowteach.com
+        </div>
+    </footer>
+
+</body>
+
+</html>

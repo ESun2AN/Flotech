@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script defer src="./js/detail.js"></script>
+    <script defer src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./css/detail.css" />
+    <!-- https://www.typeitjs.com/  플러그인 cdn -->
+    <script defer src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <!-- 로그인 관련 -->
+    <script defer src="js/sessionlogin.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="Title"><img src="img/logotypo.png" alt="logo" width="160px" onclick="redirectToSite()"></div>
+        <div class="searchbar"><input type="text" name="searchbox" id="searchbar__main" placeholder="검색어를 입력해주세요"><span
+                class="material-symbols-outlined">
+                search
+            </span></div>
+        <div id="header__login">
+            <div><a href="login.html" class="loginlink">로그인</a>
+                <a  class="loginlink">회원가입</a>
+            </div>
+        </div>
+    </header>
+  
+
+    <nav>
+        <ul class="nav__menu">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              카테고리
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="index.html">요리</a></li>
+              <li><a class="dropdown-item" href="#">베이킹</a></li>
+              <li><a class="dropdown-item" href="#music">음악</a></li>
+              <li><a class="dropdown-item" href="#">사진 & 영상</a></li>
+              <li><a class="dropdown-item" href="#exercise">운동</a></li>
+              <li><a class="dropdown-item" href="#drawing">공예</a></li>
+              <li><a class="dropdown-item" href="#">재테크</a></li>
+              <li><a class="dropdown-item" href="#languge">외국어</a></li>
+              <li><a class="dropdown-item" href="#">디자인</a></li>
+              <li><a class="dropdown-item" href="#programing">프로그래밍</a></li>
+              <li><a class="dropdown-item" href="#">라이프스타일</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="semi_event.html">이벤트</a></li>
+              <li><a class="dropdown-item">마이페이지</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="review.html">수강후기</a></li>
+            </ul>
+          </div>
+          <li><a href="index.html" class="padingtest">요리</a></li>
+          <li><a href="#drawing" class="padingtest">창작</a></li>
+          <li><a href="#music" class="padingtest">음악</a></li>
+          <li><a href="#languge" class="padingtest">외국어</a></li>
+          <li><a href="#exercise" class="padingtest">운동</a></li>
+          <li><a href="#programing" class="padingtest">프로그래밍</a></li>
+          <li><a href="semi_event.html" class="padingtest">이벤트</a></li>
+        </ul>
+      </nav>
+
+    <!-- 캐러셀 이미지 -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="./img/food03.jpg" class="d-block w-100" alt="img01">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/food02.jpg" class="d-block w-100" alt="img02">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/food01.jpg" class="d-block w-100" alt="img03">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main>
+        <!-- 클래스 제목 -->
+        <div class="class__name">
+
+            <h1>브런치 쿠킹 클래스: 나를 위한 특별한 브런치 만들기!</h1>
+            <!-- 버튼  -->
+            <div id="class__btn" class="class__btn__tool">
+                <a class="start">시작하기</a>
+                <a class="warn" href="#middle">유의사항</a>
+                <a class="heart" id="heart" onclick="heart()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                    <a class="share" id="Share" onclick="Share()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-share" viewBox="0 0 16 16">
+                            <path
+                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                        </svg>
+
+
+                    </a>
+
+            </div>
+
+            <!-- 선생님, 강의레벨, 강의시간  -->
+            <div class="class__detail">
+                <p class="teacher">선생님 : 마리오 프레시코</p>
+                <p class="level"> 레벨 : 초보 가능</p>
+                <p class="time"> 시간 : 20분</p>
+            </div>
+
+            <!-- 구분바 -->
+            <div class="separator"></div>
+
+
+            <!-- 강의소개 -->
+            <div class="introduce__class">
+
+                <p class="introduce">클래스 소개</p>
+                <p class="introduce__name"> 브런치 온라인 쿠킹클래스</p>
+                <img class="food06" src="img/mario2.jpg" alt="food05">
+                <p class="introduce__detail__1">요리의 마음, 여기 온라인에서 만나다.</p>
+                브런치 쿠킹 클래스는 특별한 브런치를 만들어보고자 하는 이들을 위한 온라인 요리 수업입니다. 여러분은 집에서 편안하게 앉아서 세계 각지의 셰프들과 함께 요리의 기술을 익히고 즐길 수
+                있습니다.
+                <br>
+                <br>
+                <p class="introduce__detail__1"> 왜 브런치?</p>
+                브런치는 요리의 예술과 즐거움이 만나는 곳입니다.특별한 브런치 메뉴를 만들어내는 비결을 배우고, 집에서도 간편하게 따라 할 수 있는 레시피와 테크닉을 소개합니다.
+                <br>
+                <br>
+                <img class="food04" src="img/food04.jpg" alt="food04">
+                <p class="introduce__detail__1">클래스 내용</p>
+                세계 각지의 요리: 이탈리아의 파스타, 프랑스의 크로와상, 일본의 초밥 등 다양한 국가의 대표적인 브런치 메뉴를 배워보세요.<br>
+                요리의 기초와 고급 기술: 초보자부터 전문가까지, 모든 수강생들을 위한 다양한 난이도의 수업을 제공합니다.<br>
+                라이브 셰프 시연: 실시간으로 진행되는 라이브 수업에서 세계적인 요리사들의 레시피를 직접 확인하고 따라 할 수 있습니다.
+                <br>
+                <br>
+                <img class="food05" src="./img/food01.jpg" alt="food05">
+                <p class="introduce__detail__1">클래스 정보</p>
+                수업 형태: 온라인 비대면 수업<br>
+                함께하는 여정<br>
+
+                브런치 온라인 쿠킹클래스는 요리에 대한 새로운 관점과 기술을 탐험하고자 하는 이들을 위한 특별한 여정입니다. 여러분의 요리 실력을 향상시키고, 세계 각국의 맛과 문화를 경험하세요.<br>
+                지금 수강 신청하고 특별한 브런치를 함께 만들어봅시다!
+
+            </div>
+            <!-- 구분바 -->
+            <div class="separator"></div>
+
+            <!-- 약력 -->
+            <div class="history__class">
+                <p class="history">선생님 소개</p>
+                <p class="history__name">셰프 [마리오 프레시코]</p>
+                <img class="mario" src="./img/mario.jpg" alt="mario">
+                <img class="mario" src="./img/mario3.jpg" alt="mario2">
+
+                <dl class="row">
+                    <dt class="col-sm-3">2000년</dt>
+                    <dd class="col-sm-9">요리의 세계에 두 발을 디딘 시작
+                        마리오 프레시코는은 첫 요리 경험을 통해 요리에 대한 놀라운 열정을 발견했습니다. 이것은 단순한 요리가 아니라 공유와 소통의 매개체로서의 요리에 대한 깊은 이해를
+                        불러일으키는 계기였습니다.
+                    </dd>
+
+                    <dt class="col-sm-3">2010년</dt>
+                    <dd class="col-sm-9">
+                        <p> 세계를 돌며 다양한 문화의 요리 경험</p>
+                        <p> 다양한 국가에서의 요리 경험은 마리오에게 세계 각지의 다양한 식재료와 조리법을 경험하게 해주었습니다. 그는 지속적으로 다양한 문화의 음식을 탐험하며, 그 지식을
+                            다양한 이들과 나누고 싶다는 생각을 갖게
+                            되었습니다.</p>
+                    </dd>
+
+                    <dt class="col-sm-3">2020년</dt>
+                    <dd class="col-sm-9">
+                        <p>재능을 세상과 나누기</p>
+                        <p>마리오는 브런치 쿠킹 클래스에서 자신의 요리 재능을 나누기로 결심했습니다. 그는 무상으로 수업을 진행하며, 자신의 요리 기술과 브런치의 아름다움을 함께 공유하고자
+                            합니다.
+                        </p>
+                    </dd>
+
+                    <dt class="col-sm-3">현재</dt>
+                    <dd class="col-sm-9">
+                        <p>브런치에서의 맛과 나눔을 품은 셰프</p>
+                        <div id="middle"></div>
+                        <p>현재 마리오는 브런치 쿠킹 클래스를 통해 많은 이들에게 요리의 즐거움과 나눔의 가치를 전하고 있습니다. 브런치의 세계에서 마리오는 재능을 나누는 것이 얼마나 의미 있는
+                            일인지를 보여주며, 수강생들에게
+                            실질적인 요리 경험을 선사하고 있습니다.</p>
+                        <div id="middle"></div>
+                    </dd>
+
+                </dl>
+                <!-- 구분바 -->
+                <div class="separator"></div>
+                <!-- 유의사항 -->
+                <div class="warning">
+                    <p class="Warningpage">유의사항</p>
+
+                    <div>
+                        <P class="warningpage__detail">
+                            ■ 수강기간이란 회사가 회원에게 유상으로 제공하는 클래스 이용기간으로서 90일을 의미합니다.<br>
+                            단, 개별 클래스에 따라 90일 미만의 수강기간이 제공될 수 있습니다.
+                            <br>
+                            ■ 수강기간은 결제일부터 시작합니다. 단, 결제일 당시 클래스영상을 이용할 수 없는 경우 수강기간은 클래스영상의 이용 가능일부터 시작합니다.
+                            <br>
+                            ■ 수강진도란 총 클래스영상 수 중 기 이용한 영상 수의 비율을 의미합니다. 단, 클래스영상 일부 재생 시 이용으로 간주합니다.
+                            <br>
+                            ■ 환불요청일 기준 수강기간과 수강진도 중 높은 값을 적용하여 환불금액을 산정합니다.
+                            <br>
+                            ■ 회원이 클래스와 함께 제공되는 자료 또는 정보를 다운로드하는 경우 해당 자료 또는 정보가 포함된 클래스영상을 이용한 것으로 간주합니다.
+                            <br>
+                            ■ 회사는 「약관의 규제에 관한 법률」, 「전자상거래 및 소비자보호에 관한 법률」 등 관계 법령을 위배하지 아니하는 범위 내에서 이 정책을 개정할 수 있습니다.
+                            <br>
+                            ■ 회사가 이 정책을 개정하는 경우 회원에게 주요 개정내용과 시행일 등을 명시하여 시행일로부터 7일 전에 전자적 방법으로 알려드리겠습니다.<br>
+                            다만, 회원에게 불리한 내용이 포함되는 경우 시행일로부터 30일 전에 알려드리겠습니다.
+                            <br>
+                            ■ 서비스와 관련하여 궁금하신 사항이 있으시면 고객센터(대표번호: 0000 – 0000 / 평일 10:00~17:00)로 문의 주시기 바랍니다.
+                            <br>
+                            ■ 저작권 및 허가 :강의 자료, 비디오, 이미지 등에 대한 저작권 및 사용 허가는 (주)플로티드 에게 있습니다.
+                            <br>
+                            ■ (주)플로티드는 무단 복제나 공유를 금지합니다.
+                            <br>
+                            ■ 강사에 대한 모욕적이거나 부적절한 행동은 금지 하며, 이를 위반할시 법적 제재를 가할 수 있습니다.
+                            <br>
+                            ■ 기술적인 문제가 발생했을 때 기술 지원팀의 도움을 요청하세요.
+                            <br>
+                            ■ 개인 정보 수집, 저장에 대한 정보는 이용약관을 확인하세요.
+
+                        </P>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <!-- 스크롤 맨위 버튼 -->
+            <button id="scrollBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                    height="50" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg></button>
+    </main>
+    <!-- footer시작 -->
+    <footer>
+        <div class="footertest">
+            <ul class="footer__info">
+                <li class="footer_title">고객센터</li>
+                <li>10:00~18:30</li>
+                <li>주말,공유일 휴무</li>
+                <li><input type="button" value="1:1문의" id="footer__button" /></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">플로티치</li>
+                <li><a href="main.html">플로티치 메인</a></li>
+                <li><a href="semi_event.html">이벤트</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">관련 사이트</li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">GIT</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">KH</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">지원</li>
+                <li><a href="announcement.html">공지사항</a></li>
+                <li><a href="FAQ.html">자주 묻는 질문</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전문가 센터</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="reserve">
+            KDH서울시 강남구 역전로로 157, 100층대표 : OOO, OOO 개인정보관리책임자 : OOO 이사업자등록번호 : 111-11-11111<br>
+            통신판매업신고 : 1111-서울강남-1111 유료직업소개사업등록번호 : 제1111-1111111-11-1-111111호고객센터 : 1544-1544help@flowteach.com
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동영상목차</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script defer src="./js/index.js"></script>
+  <script defer src="./js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+  <script defer src="js/sessionlogin.js"></script>
+</head>
+</head>
+
+<body>
+  <header>
+    <div class="Title"><img src="img/logotypo.png" alt="logo" width="160px"  onclick="redirectToSite()" ></div>
+    <div class="searchbar"><input type="text" name="searchbox" id="searchbar__main" placeholder="검색어를 입력해주세요"><span
+        class="material-symbols-outlined">
+        search
+      </span></div>
+    <div id="header__login">
+      <div><a href="login.html" class="loginlink">로그인</a>
+        <a  class="loginlink">회원가입</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!--전체동영상-->
+  <main>
+    <nav>
+      <ul class="nav__menu">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            카테고리
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item active" href="index.html">요리</a></li>
+            <li><a class="dropdown-item" href="#">베이킹</a></li>
+            <li><a class="dropdown-item" href="#music">음악</a></li>
+            <li><a class="dropdown-item" href="#">사진 & 영상</a></li>
+            <li><a class="dropdown-item" href="#exercise">운동</a></li>
+            <li><a class="dropdown-item" href="#drawing">공예</a></li>
+            <li><a class="dropdown-item" href="#">재테크</a></li>
+            <li><a class="dropdown-item" href="#languge">외국어</a></li>
+            <li><a class="dropdown-item" href="#">디자인</a></li>
+            <li><a class="dropdown-item" href="#programing">프로그래밍</a></li>
+            <li><a class="dropdown-item" href="#">라이프스타일</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="semi_event.html">이벤트</a></li>
+            <li><a class="dropdown-item">마이페이지</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="review.html">수강후기</a></li>
+          </ul>
+        </div>
+        <li><a href="index.html" class="padingtest">요리</a></li>
+        <li><a href="#drawing" class="padingtest">창작</a></li>
+        <li><a href="#music" class="padingtest">음악</a></li>
+        <li><a href="#languge" class="padingtest">외국어</a></li>
+        <li><a href="#exercise" class="padingtest">운동</a></li>
+        <li><a href="#programing" class="padingtest">프로그래밍</a></li>
+        <li><a href="semi_event.html" class="padingtest">이벤트</a></li>
+      </ul>
+    </nav>
+    <div class="console">
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+      <div class="name">FLOTEACH</div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="street-lamps">
+        <div class="street-lamp"></div>
+        <div class="street-lamp"></div>
+        <div class="street-lamp"></div>
+        <div class="street-lamp"></div>
+        <div class="street-lamp"></div>
+        <div class="street-lamp"></div>
+        <div class="street-lamp"></div>
+      </div>
+
+      <div class="cars-incoming">
+        <div class="car"></div>
+        <div class="car"></div>
+        <div class="car"></div>
+        <div class="car"></div>
+        <span class="reflect"></span>
+        <span class="reflect"></span>
+        <span class="reflect"></span>
+        <span class="reflect"></span>
+      </div>
+
+      <div class="cars-going">
+        <div class="car"></div>
+        <span class="reflect"></span>
+      </div>
+
+      <div class="cars-going-flash">
+        <div class="car"></div>
+        <span class="reflect"></span>
+      </div>
+
+      <div class="city-lights">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <h2 class="title" id="title"> <img src="./img/logo.png" lat="logo" width="50" height="40" id="cooking"> 전체 동영상 </h2>
+
+    <button class="btn__choice" onclick="showAllVideos()"># 전체 동영상</button>
+    <button class="btn__choice" onclick="filter('cooking')"># 요리</button>
+    <button class="btn__choice" onclick="filter('create')"># 드로잉</button>
+    <button class="btn__choice" onclick="filter('music')"># 음악</button>
+    <button class="btn__choice" onclick="filter('languge')"># 외국어</button>
+    <button class="btn__choice" onclick="filter('exercise')"># 운동</button>
+    <button class="btn__choice" onclick="filter('programing')"># 프로그래밍</button>
+
+
+
+
+    <br>
+
+    <div class="container">
+
+      <ul class="video" id="cooking">
+        <!-- 요리 -->
+        <li class="project">
+        <p class="subtitle cooking" > 요리 </p>
+      </li>       
+        <li class="project" id="drawing">
+          <a herf="./">
+            <img src="./img/c1.jpg" alt="c1" class="p__img cooking">
+          </a>
+          <div class="project__metadata">
+            <h3 class="project__title">피자</h3>
+            <p>홈 쿠킹 전통피자 만들기</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/c2.jpg" alt="c2" class="p__img cooking">
+          <div class="project__metadata">
+            <h3 class="project__title">스시볼</h3>
+            <p>들어는 봤나 스시볼</p>
+
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/c3.jpg" alt="c3" class="p__img cooking">
+
+          <div class="project__metadata">
+            <h3 class="project__title">타코</h3>
+            <p>대세는 이제 멕시칸</p>
+          </div>
+        </li>
+        <li class="project">
+          <a href="./detail.html">
+            <img src="./img/food05.jpg" alt="c4" class="p__img cooking">
+            <div class="project__metadata">
+              <h3 class="project__title">브런치</h3>
+              <p>맛있는 하루를 위한 브런치</p>
+            </div>
+          </a>
+        </li>
+      
+        <!-- 창작 -->
+        <li class="project">
+          <p class="subtitle create" id="create"> 드로잉 </p>
+        </li>
+
+        <li class="project" id="music">
+
+          <img src="./img/d1.jpg" alt="d1" class="p__img create">
+          <div class="project__metadata">
+            <h3 class="project__title">일러스트</h3>
+            <p>동화같은 일러스트 그리기</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/d2.jpg" alt="d2" class="p__img create">
+
+          <div class="project__metadata">
+            <h3 class="project__title">수채화</h3>
+            <p>물감에 물 탄 듯</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/d3.jpg" alt="d3" class="p__img create">
+
+          <div class="project__metadata">
+            <h3 class="project__title">바디페인팅</h3>
+            <p>Drawing on your body!</p>
+          </div>
+
+        </li>
+        <li class="project">
+          <img src="./img/d4.jpg" alt="d4" class="p__img create">
+
+          <div class="project__metadata">
+            <h3 class="project__title">도예</h3>
+            <p>집에서 만드는 내 밥그릇!</p>
+          </div>
+        </li>
+
+        <!-- 악기 -->
+        <li class="project">
+                    <p class="subtitle music" id="music" > 음악 </p>
+        </li>
+
+        <li class="project" id="languge">
+
+          <img src="./img/m1.jpg" alt="m1" class="p__img music">
+          <div class="project__metadata">
+            <h3 class="project__title">기타</h3>
+            <p>멋쟁이 베짱이가 되어보자</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/m2.jpg" alt="m2" class="p__img music">
+
+          <div class="project__metadata">
+            <h3 class="project__title">피아노</h3>
+            <p>다시 만난 피아노</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/m3.jpg" alt="m3" class="p__img music">
+
+          <div class="project__metadata">
+            <h3 class="project__title">바이올린</h3>
+            <p>처음만난 현악기</p>
+          </div>
+
+        </li>
+        <li class="project">
+          <img src="./img/m4.jpg" alt="m4" class="p__img music">
+
+          <div class="project__metadata">
+            <h3 class="project__title">드럼</h3>
+            <p>두드려라 열릴것이다</p>
+          </div>
+        </li>
+        <!-- 외국어 -->
+        <li class="project">
+          <p class="subtitle languge" id="languge" > 외국어 </p>
+        </li>
+
+        <li class="project" id="exercise">
+          <img src="./img/f2.jpg" alt="f1" class="p__img languge">
+
+          <div class="project__metadata">
+
+            <h3 class="project__title">프랑스어</h3>
+            <p>Bonjour! Je m'appelle Marie!</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/f1.jpg" alt="f2" class="p__img languge">
+          <div class="project__metadata">
+            <h3 class="project__title">영어</h3>
+            <p>시작하자 생활영어</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/f3.jpg" alt="f3" class="p__img languge">
+
+          <div class="project__metadata">
+            <h3 class="project__title">일본어</h3>
+            <p>하루 30분 여행용 일본어</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/f4.jpg" alt="f4" class="p__img languge">
+
+          <div class="project__metadata">
+            <h3 class="project__title">한국어</h3>
+            <p>다시 배우는 올바른 우리말표현</p>
+          </div>
+        </li>
+
+        <!-- 운동 -->
+        <li class="project">
+          <p class="subtitle exercise" id="exercise" >운동 </p>
+        </li>
+
+        <li class="project" >
+          <img src="./img/p1.jpg" alt="p1" class="p__img exercise">
+          <div class="project__metadata">
+            <h3 class="project__title">자전거</h3>
+            <p>한강에서 시작하는 사이클 타기</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/p2.jpg" alt="p2" class="p__img exercise">
+
+          <div class="project__metadata">
+            <h3 class="project__title">주짓수</h3>
+            <p>처음 시작하는 도복 운동</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/p3.jpg" alt="p3" class="p__img exercise">
+
+          <div class="project__metadata">
+            <h3 class="project__title">달리기</h3>
+            <p>함께하는 Runday</p>
+          </div>
+
+        </li>
+        <li class="project">
+          <img src="./img/p4.jpg" alt="p4" class="p__img exercise">
+
+          <div class="project__metadata">
+            <h3 class="project__title">요가</h3>
+            <p>심신의 안정을 위해</p>
+          </div>
+        </li>
+
+        <!-- 프로그래밍 -->
+        <li class="project">
+          <p class="subtitle programing" id="programing" > 프로그래밍</p>
+        </li>
+
+        <li class="project" id="programing">
+
+          <img src="./img/pr1.jpg" alt="pr1" class="p__img programing">
+          <div class="project__metadata">
+            <h3 class="project__title">AI</h3>
+            <p>chat gpt를 이겨보자</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/pr2.png" alt="pr2" class="p__img programing">
+
+          <div class="project__metadata">
+            <h3 class="project__title">JAVA</h3>
+            <p>정신줄 java</p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="./img/pr3.jpg" alt="pr3" class="p__img programing">
+
+          <div class="project__metadata">
+            <h3 class="project__title">보안</h3>
+            <p>나는 네가 한 일을 알고있다.</p>
+          </div>
+
+        </li>
+        <li class="project">
+          <img src="./img/pr4.jpg" alt="pr4" class="p__img programing">
+
+          <div class="project__metadata">
+            <h3 class="project__title">알고리즘</h3>
+            <p>컴퓨터 속 마인드맵</p>
+          </div>
+        </li>
+
+
+
+      </ul>
+    </div>
+    </div>
+
+    <!-- 스크롤 맨위 버튼 -->
+    <button id="scrollBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+        fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg></button>
+  </main>
+
+
+  <!-- footer시작 -->
+  <footer>
+    <div class="footertest">
+        <ul class="footer__info">
+            <li class="footer_title">고객센터</li>
+            <li>10:00~18:30</li>
+            <li>주말,공유일 휴무</li>
+            <li><input type="button" value="1:1문의" id="footer__button" /></li>
+        </ul>
+        <ul class="footer__info">
+            <li class="footer_title">플로티치</li>
+            <li><a href="main.html">플로티치 메인</a></li>
+            <li><a href="semi_event.html">이벤트</a></li>
+            <li><a href="login.html">로그인</a></li>
+        </ul>
+        <ul class="footer__info">
+            <li class="footer_title">관련 사이트</li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">GIT</a></li>
+            <li><a href="#">유튜브</a></li>
+            <li><a href="#">KH</a></li>
+        </ul>
+        <ul class="footer__info">
+            <li class="footer_title">지원</li>
+            <li><a href="announcement.html">공지사항</a></li>
+            <li><a href="FAQ.html">자주 묻는 질문</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">전문가 센터</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="reserve">
+        KDH서울시 강남구 역전로로 157, 100층대표 : OOO, OOO 개인정보관리책임자 : OOO 이사업자등록번호 : 111-11-11111<br>
+        통신판매업신고 : 1111-서울강남-1111 유료직업소개사업등록번호 : 제1111-1111111-11-1-111111호고객센터 : 1544-1544help@flowteach.com
+    </div>
+</footer>
+
+</body>
+
+</html>

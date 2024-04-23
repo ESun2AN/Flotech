@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 공지사항</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/scrollToTop.css">
+    <script defer src="./JS/scrollToTop.js"></script>
+    <link rel="stylesheet" href="./css/TOP_writers.css">
+    <link rel="stylesheet" href="./css/announcement.css">
+  
+    
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="Title"><img src="./img/logotypo.png" alt="logo" width="160px"></div>
+        <div class="searchbar"><input type="text" name="searchbox" id="searchbar__main" placeholder="검색어를 입력해주세요"><span
+                class="material-symbols-outlined">
+                search
+            </span></div>
+        <div id="header__login">
+            <div><a href="#" class="loginlink">로그인</a>
+                <a href="#" class="loginlink">회원가입</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__menu">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              카테고리
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="index.html">요리</a></li>
+              <li><a class="dropdown-item" href="#">베이킹</a></li>
+              <li><a class="dropdown-item" href="#music">음악</a></li>
+              <li><a class="dropdown-item" href="#">사진 & 영상</a></li>
+              <li><a class="dropdown-item" href="#exercise">운동</a></li>
+              <li><a class="dropdown-item" href="#drawing">공예</a></li>
+              <li><a class="dropdown-item" href="#">재테크</a></li>
+              <li><a class="dropdown-item" href="#languge">외국어</a></li>
+              <li><a class="dropdown-item" href="#">디자인</a></li>
+              <li><a class="dropdown-item" href="#programing">프로그래밍</a></li>
+              <li><a class="dropdown-item" href="#">라이프스타일</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="semi_event.html">이벤트</a></li>
+              <li><a class="dropdown-item">마이페이지</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="review.html">수강후기</a></li>
+            </ul>
+          </div>
+          <li><a href="index.html" class="padingtest">요리</a></li>
+          <li><a href="#drawing" class="padingtest">창작</a></li>
+          <li><a href="#music" class="padingtest">음악</a></li>
+          <li><a href="#languge" class="padingtest">외국어</a></li>
+          <li><a href="#exercise" class="padingtest">운동</a></li>
+          <li><a href="#programing" class="padingtest">프로그래밍</a></li>
+          <li><a href="semi_event.html" class="padingtest">이벤트</a></li>
+        </ul>
+      </nav>
+      <!-- 공지사항 페이지 -->
+    <div class="board_wrap">
+        <div class="board_title">
+            <h1><b>공지사항</b></h1>
+
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="number">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">날짜</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="number">25</div>
+                    <div class="title"><a href="pageview.html">게시물관리 정책</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.12.05</div>
+                    <div class="count">24</div>
+                </div>
+                <div> 
+                    <div class="number">24</div>
+                    <div class="title"><a href="pageview.html">개선사항 안내</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.12.05</div>
+                    <div class="count">5</div>
+                </div>
+                <div>
+                  
+                    <div class="number">23</div>
+                    <div class="title"><a href="pageview.html">개인 회원 서비스 이용안내</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.12.03</div>
+                    <div class="count">67</div>
+                </div>
+                <div>
+                    <div class="number">22</div>
+                    <div class="title"><a href="pageview.html">정치 게시물에 대한 운영 방침 안내</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.29</div>
+                    <div class="count">56</div>
+                </div>
+                <div>
+                    <div class="number">21</div>
+                    <div class="title"><a href="pageview.html">버그제보 안내</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.28</div>
+                    <div class="count">52</div>
+                </div>
+                <div>
+                    <div class="number">20</div>
+                    <div class="title"><a href="pageview.html">플로티치 방문통계입니다.</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.27</div>
+                    <div class="count">24</div>
+                </div>
+                <div>
+                    <div class="number">19</div>
+                    <div class="title"><a href="pageview.html">버그제보 안내</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.17</div>
+                    <div class="count">52</div>
+                </div>
+                <div>
+                    <div class="number">18</div>
+                    <div class="title"><a href="pageview.html">사이트 개선사항입니다.</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.13</div>
+                    <div class="count">18</div>
+                </div>
+                <div>
+                    <div class="number">17</div>
+                    <div class="title"><a href="pageview.html">동영상 끊김문제 해결완료.</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.8</div>
+                    <div class="count">52</div>
+                </div>
+                <div>
+                    <div class="number">16</div>
+                    <div class="title"><a href="pageview.html">홈페이지 리뉴얼</a></div>
+                    <div class="writer">관리자</div>
+                    <div class="date">2023.11.3</div>
+                    <div class="count">100</div>
+                </div>
+            </div>
+            <!-- 공지사항 버튼 페이지 -->
+            <div class="board_page">
+                <a href="#" class="bt first"><</a>
+                        <a href="#" class="bt prev"><<</a>
+                                <a href="#" class="num on">1</a>
+                                <a href="#" class="num">2</a>
+                                <a href="#" class="num">3</a>
+                                <a href="#" class="num">4</a>
+                                <a href="#" class="num">5</a>
+                                <a href="#" class="bt next">></a>
+                                <a href="#" class="bt last">>></a>
+            </div>
+        </div>
+        <!-- 왼쪽 writer랭킹 -->
+        <div class="top_writers_container">
+            <div class="ranking_title">
+             TOP Writers
+            </div>
+            <div  class="item_container_medal" >
+            <img src="./img/medal-1622523_640 (2).png" class="medal" alt="gold">
+            <div  class="item_name">미니마</div>
+            <div class="item_name_level">LV.48</div>
+            <div class="item_answer">답변:25</div>
+            </div>
+            <div  class="item_container_medal_color">
+                <img src="./img/medal-1622529_640 (2).png" class="medal" alt="silver">
+                <div class="item_name">플로즈</div>
+                <div class="item_name_level">LV.31</div>
+                <div class="item_answer">답변:22</div>
+            </div>
+            <div  class="item_container_medal">
+                <img src="./img/medal-2163351_640 (2).png" class="medal" alt="bronze">
+                <div class="item_name">레이로</div>
+                <div class="item_name_level">LV.200</div>
+                <div class="item_answer">답변:18</div>
+            </div>
+            <div class="item_container_color">
+                <div class="number">4</div>
+                <div class="item_name">파트린</div>
+                <div class="item_name_level">LV.15</div>
+                <div class="item_answer">답변:15</div>
+            </div>
+            <div class="item_container">
+                <div class="number">5</div>
+                <div class="item_name">네오질</div>
+                <div class="item_name_level">LV.40</div>
+                <div class="item_answer">답변:14</div>
+            </div>
+    </div>
+    <!-- 스크롤 맨위 버튼 -->
+    <button id="scrollBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg></button>
+      <!-- footer -->
+    <footer>
+        <div class="footertest">
+            <ul class="footer__info">
+                <li class="footer_title">고객센터</li>
+                <li>10:00~18:30</li>
+                <li>주말,공유일 휴무</li>
+                <li><input type="button" value="1:1문의" id="footer__button" /></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">플로티치</li>
+                <li><a href="main.html">플로티치 메인</a></li>
+                <li><a href="semi_event.html">이벤트</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">관련 사이트</li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">GIT</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">KH</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">지원</li>
+                <li><a href="announcement.html">공지사항</a></li>
+                <li><a href="FAQ.html">자주 묻는 질문</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전문가 센터</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="reserve">
+            KDH서울시 강남구 역전로로 157, 100층대표 : OOO, OOO 개인정보관리책임자 : OOO 이사업자등록번호 : 111-11-11111<br>
+            통신판매업신고 : 1111-서울강남-1111 유료직업소개사업등록번호 : 제1111-1111111-11-1-111111호고객센터 : 1544-1544help@flowteach.com
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

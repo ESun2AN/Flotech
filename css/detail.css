@@ -1,0 +1,371 @@
+/* 폰트 */
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* header */
+header{
+    font-family: 'JalnanGothic';
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+   
+    
+}
+.Title{
+    
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+
+/* 검색 바 */
+
+.searchbar{
+    border:3px solid  #2a69fa;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    margin-left: 180px;
+    height: 40px;
+    width: 500px;
+  }
+
+#searchbar__main{
+    width: 600px;
+    border-radius: 60px;
+    border:none;
+    outline:none;
+}
+.material-symbols-outlined{
+    color: #2a69fa;
+
+}
+
+
+/* header 로그인/회원가입 */
+#header__login{
+    display: flex;
+    margin-left: 300px;
+}
+.loginlink{
+    margin-left: 10px;
+    color: white;
+}
+.loginlink:nth-child(2){
+    border: 2px solid #2a69fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+.loginlink:nth-child(2):hover{
+    background-color: #2a69fa;
+    color: white;
+}
+
+/* nav */
+.btn{
+    
+    background-color: black;
+}
+.dropdown{
+    padding-top: 0px;
+}
+.dropdown-menu, dropdown-item{
+    
+    background-color: black;
+}
+nav{
+    
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+}
+.nav__menu{
+    font-family: 'JalnanGothic';
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.padingtest01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.padingtest{
+ 
+    color: white;
+    
+  }
+ .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+
+
+
+/* body */
+body{
+    padding-top:70px;
+    background-color: black;
+    
+}
+main{
+    font-family: 'JalnanGothic';
+    margin:0 auto;
+    padding-bottom: 100px;
+    width: 1350px;
+}
+.carousel-control-prev-icon{
+    color: #2a69fa;
+}
+.carousel-inner {
+   
+    margin: 0 auto;
+    max-width: 1350px;
+    max-height: 500px;
+}
+
+h1 {
+    padding-top: 15px;
+    color: white;
+}
+
+
+#class__btn {
+  
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+
+p{
+    color: white;
+}
+
+
+.start {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #2a69fa;
+    background-color: #2a69fa;
+}
+
+.start:hover{
+    color:black;
+}
+
+.warn{  
+
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+
+}
+.warn:hover{
+    border-bottom: 3px solid #2a69fa;
+    
+    
+}
+
+#heart {
+   
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+#heart:hover{
+   
+    color:#2a69fa;
+}
+
+
+
+
+.share {
+  
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+.share:hover{  
+   
+    color:#2a69fa;
+}
+.class__detail{
+    text-align: left;
+}
+
+.separator{
+    border-top: 3px solid #2a69fa;
+    width: 1350px;
+    margin: 20px auto;
+    padding-top: 30px;
+
+}
+
+.introduce__class{
+    color: white;
+}
+.introduce{
+    font-size: 40px;
+}
+
+.introduce__name{
+    font-size: 30px;
+}
+.food06{
+    border-radius: 10px;
+    width: 300px;
+}
+.food04{
+   
+    border-radius: 10px;
+    width: 1000px;
+
+    margin-bottom: 20px;
+}
+.food05{
+    border-radius: 10px;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+.introduce__detail__1{
+    margin-top: 20px;
+    font-size:20px;
+}
+.history__class{
+    color: white;
+}
+.history__name{
+    font-size: 30px;
+}
+.history{
+    margin-top: 30px;
+    font-size: 40px;
+}
+.mario{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.history__detail01{
+    font-size: 25px;
+}
+.row{
+    padding-top: 50px;
+}
+.col-sm-3{
+    text-align: center;
+    font-size: 25px;
+}
+/*warning page*/
+.Warningpage{
+    font-size : 30px;
+}
+
+/* 스크롤 맨위 버튼 */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    color: #2a69fa;
+    
+  background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+/* footer css */
+footer{
+    
+    height: 450px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    margin: 0 auto;
+    background-color: black;
+}
+.footertest{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1350px;
+
+}
+.footer_title{
+    font-weight: bolder;
+    font-size: larger;
+}
+.footer__info{
+    font-family: 'JalnanGothic';
+    margin-top: 30px;
+    list-style: none;
+}
+.ftli{
+    padding-top: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.loginlink:hover{
+    text-decoration: underline 3px #2a69fa;
+}
+.reserve{
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: black;
+}
+#footer__button{
+    border:3px solid #2a69fa;
+    background-color: black;
+    color: #2a69fa;
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
+}
+#footer__button:hover{
+    border:3px solid #2a69fa;
+    background-color: #2a69fa;
+    color: white;
+    border-radius: 3px;
+}
+ul{
+    list-style: none;
+}

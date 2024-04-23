@@ -1,0 +1,247 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* 폰트 */
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'JalnanGothic';
+    height:100vh;
+}
+/* nav */
+.btn{
+
+    background-color: black;
+}
+.dropdown{
+    padding-top: 10px;
+}
+nav{
+    margin-top:100px;
+    height: 60px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+}
+.nav__menu{
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  justify-content: center;
+  column-gap: 100px;
+}
+.padingtest{
+    color: white;
+    margin-bottom: 100px;
+  }
+  .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+/* 공지사항 페이지 */
+.board_wrap {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.board_title {
+    text-align: center;
+
+    margin-bottom: 100px;
+}
+
+.board_title h1 {
+    font-size: 4rem;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    color: black;
+}
+
+.board_title p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.board_list_wrap {
+    height:1300px;
+    color: black;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 3px solid black;
+    color: black !important;
+   
+}
+
+.board_list>div {
+    border-bottom: 2px solid gainsboro;
+    
+    font-size: 1.6rem;
+    
+}
+
+.board_list>div.top {
+    border-bottom: 2px solid gray;
+    
+}
+
+.board_list>div:last-child {
+    border-bottom: 3px solid black;
+   
+}
+
+.board_list>div>div {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 20px 0px;
+}
+
+.board_list .number {
+    width: 15%;
+
+}
+
+.board_list .title {
+    width: 50%;
+
+    text-align: left;
+
+    color: black !important;
+
+}
+.board_list .title a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.board_list .top .title {
+    text-align: center;
+    color: black;
+}
+
+.board_list .writer,
+.board_list .date,
+.board_list .count {
+    width: 10%;
+  
+}
+/*페이지 버튼 */
+
+.board_page {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0;
+    padding-top: 23px;
+}
+
+.board_page a {
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid gainsboro;
+    border-left: 0;
+    vertical-align: middle;
+    line-height: 100%;
+    font-size: 1.2rem;
+    padding-top: 23px;
+    background-color: #fff;
+    color: black;
+    
+}
+
+.board_page a.num.on {
+    background-color: white;
+    color: black;
+    padding-top: 23px;
+}
+
+.board_page a.bt {
+    font-size: 1.2rem;
+    padding-top: 23px;
+}
+
+.board_page a.num {
+    font-size: 1.4rem;
+    padding-top: 23px;
+}
+
+.board_page a:first-child {
+    border-left: 1px solid gainsboro;
+    padding-top: 23px;
+}
+
+.board_page a.num.on {
+
+    background-color: white;
+    color: black;
+    padding-top: 23px;
+}
+
+/* footer 지우면 큰일나요! */
+footer{
+    height: 450px;
+  
+    color: white;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute; 
+    top: 1800px;
+        
+ 
+}
+.footertest{
+    display: flex;
+    justify-content: space-between;
+ 
+    padding: 10px;
+
+}
+.footer_title{
+    font-weight: bolder;
+    font-size: larger;
+}
+ul{
+    margin-top: 30px;
+    list-style: none;
+}
+li{
+    padding-top: 20px;
+}
+.footer__info a{
+    color: white;
+    text-decoration: none;
+}
+.footer__info a:hover{
+    text-decoration: underline 3px #2a69fa;
+}
+.reserve{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+#footer__button{
+    border:3px solid #2a69fa;
+    background-color: black;
+    color: #2a69fa;
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
+}
+#footer__button:hover{
+    border:3px solid #2a69fa;
+    background-color: #2a69fa;
+    color: white;
+    border-radius: 3px;
+}
+/* footer끝!  */

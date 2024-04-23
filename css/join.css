@@ -1,0 +1,213 @@
+/* 폰트 */
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* nav */
+.btn{
+    
+    background-color: black;
+}
+.dropdown{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu, dropdown-item{
+        
+    background-color: black;
+}
+
+nav{
+    
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+
+}
+
+.nav__menu{
+  font-family: 'JalnanGothic';
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.padingtest01{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.padingtest{
+ 
+    color: white;
+    
+  }
+ .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+
+
+
+/* 회원가입시작 */
+body{
+    
+    /* background-color: black; */
+    margin: 0px;
+    padding-top: 70px;
+    /* font-family: 'JalnanGothic'; */
+    /* color: white; */
+}
+.join{
+    /* background-color: black; */
+
+    height: 100%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    color: black;
+    
+    /* margin-bottom: 150px; */
+    /* border: 1px solid salmon; */
+    
+}
+table{
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+    font-size: 20px;
+   
+}
+form{
+    /* margin: 100px; */
+    
+    padding: 30px;
+    /* width: 800px; */
+    height: 500px;
+    border-radius: 10px;
+    background-color: #F8F9FA;
+    
+    
+}
+
+td{
+    /* border: 1px solid red; */
+    /* padding: 50PX; */
+    /* margin-bottom: 50px; */
+    height: 30px;
+}
+.join__input__ti{
+    
+    padding-right: 10px;
+    font-size: 17px;
+}
+.join__btn__box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    /* border: 1px solid salmon; */
+    
+    /* padding-bottom: 100px; */
+}
+#join__btn{
+
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a69fa;
+    color: black;
+    font-family: 'JalnanGothic';
+    font-size: 17px;
+    /* font-weight: bold; */
+    /* margin-bottom: 50px; */
+}
+#join__btn:hover{
+    opacity: 0.8;
+}
+
+.join__input__text{
+    outline: none;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 185px;
+    font-family: 'NanumGothic';
+}
+
+.join__input__text:focus{
+    border: 1px solid #2a69fa;
+    outline: none;
+    box-shadow: 0 0 3px #2a69fa;
+}
+
+.join__input__pw{
+    outline: none;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 185px;
+    font-family: 'NanumGothic';
+}
+.join__input__pw:focus{
+    border: 1px solid #2a69fa;
+    outline: none;
+    box-shadow: 0 0 3px #2a69fa;
+}
+
+#join__btn__agr{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+#join__input{
+    height: 350px;
+}
+
+.join__agree{
+
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+input[type=checkbox] {
+    accent-color:#2a69fa;
+}
+
+
+/* 스크롤버튼css*/
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    color: #2a69fa;
+    
+  background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+

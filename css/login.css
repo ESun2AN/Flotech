@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* nav */
+.btn{
+    
+    background-color: black;
+}
+.dropdown{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu, dropdown-item{
+        
+    background-color: black;
+}
+
+nav{
+    
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+
+}
+
+.nav__menu{
+  font-family: 'JalnanGothic';
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.padingtest01{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.padingtest{
+ 
+    color: white;
+    
+  }
+ .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+
+
+/* login 시작 */
+body{
+    padding-top: 70px;
+    background-color: black;
+    margin: 0px;
+    color: white;
+}
+
+
+
+.login__page{
+    margin-top: 0px;
+    /* margin-bottom: 100px; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'JalnanGothic';
+    /* border: 1px solid salmon; */
+    
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 675px;
+    height: 700px;
+    /* margin-top: 100px; */
+    /* border: 1px solid salmon; */
+}
+
+form{
+    font-size: 17px;
+    
+    
+}
+#login__input{
+    display: flex;
+    flex-direction: column;
+    
+    /* margin: 0px; */
+    /* padding: 0px; */
+}
+.login__inputlabel{
+    margin-bottom: 5px;
+}
+.login__input__box{
+    outline: none;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'NanumGothic';
+}
+.login__input__box:focus{
+    border: 1px solid #2a69fa;
+    outline: none;
+    box-shadow: 0 0 3px #2a69fa;
+}
+
+.login__sub{
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    /* font-family: none; */
+}
+.login__sub:hover{
+    text-decoration: none;
+}
+#login__box{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login__btn{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a69fa;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'JalnanGothic';
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+#login__btn:hover{
+    opacity: 0.8;
+}
+
+#login__join{
+    width: 300px;
+    display: flex;
+    justify-content: right;
+    /* font-family: none; */
+}
+.img{
+    height: 100%;
+    opacity: 0.7;
+}
+
+.login__btn_div{
+    margin-top: 10px;
+}
+
+input[type=checkbox] {
+    accent-color:#2a69fa;
+}
+
+
+/* 스크롤버튼css */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    color: #2a69fa;
+    
+  background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semi_event</title>
+
+    <!-- 제이쿼리 사용하기 위한 라이브러리 파일 -->
+    <script defer type="text/javascript" src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- cycle 플러그인 cdn -->
+    <script defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+
+    <!-- jQuery easings 플러그인 cdn -->
+    <script defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- https://www.typeitjs.com/  플러그인 cdn -->
+    <script defer src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <!-- scrollOut CDN -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+
+
+    <!-- 내가 만드는 JS 파일 -->
+    <script defer type="text/javascript" src="./js/semi_event.js"> </script>
+
+    <!-- 내가 만드는 css 파일 -->
+    <link rel="stylesheet" href="css/semi_event2.css" />
+    <link rel="stylesheet" href="css/li.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+
+    <!-- 로그인 관련 -->
+    <script defer src="js/sessionlogin.js"></script>
+</head>
+
+<body>
+    <!-- header 시작 -->
+    <header>
+        <div class="Title"><img src="./img/logotypo.png" alt="logo" width="160px" onclick="redirectToSite()"></div>
+        <div class="searchbar"><input type="text" name="searchbox" id="searchbar__main" placeholder="검색어를 입력해주세요"><span
+                class="material-symbols-outlined">
+                search
+            </span></div>
+        <div id="header__login">
+            <div><a href="login.html" class="loginlink">로그인</a>
+                <a  class="loginlink">회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav 시작 -->
+    <nav>
+        <ul class="nav__menu">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              카테고리
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="index.html">요리</a></li>
+              <li><a class="dropdown-item" href="#">베이킹</a></li>
+              <li><a class="dropdown-item" href="#music">음악</a></li>
+              <li><a class="dropdown-item" href="#">사진 & 영상</a></li>
+              <li><a class="dropdown-item" href="#exercise">운동</a></li>
+              <li><a class="dropdown-item" href="#drawing">공예</a></li>
+              <li><a class="dropdown-item" href="#">재테크</a></li>
+              <li><a class="dropdown-item" href="#languge">외국어</a></li>
+              <li><a class="dropdown-item" href="#">디자인</a></li>
+              <li><a class="dropdown-item" href="#programing">프로그래밍</a></li>
+              <li><a class="dropdown-item" href="#">라이프스타일</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="semi_event.html">이벤트</a></li>
+              <li><a class="dropdown-item">마이페이지</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="review.html">수강후기</a></li>
+            </ul>
+          </div>
+          <li><a href="index.html" class="padingtest">요리</a></li>
+          <li><a href="#drawing" class="padingtest">창작</a></li>
+          <li><a href="#music" class="padingtest">음악</a></li>
+          <li><a href="#languge" class="padingtest">외국어</a></li>
+          <li><a href="#exercise" class="padingtest">운동</a></li>
+          <li><a href="#programing" class="padingtest">프로그래밍</a></li>
+          <li><a href="semi_event.html" class="padingtest">이벤트</a></li>
+        </ul>
+      </nav>
+    <!-- main 시작 -->
+    <main>
+        <div id="top">
+            <div id="intro">
+                <div id="intro__main" name="intro">
+                    <!-- <img src="" alt=""> -->
+                    <p id="callback"></p>
+
+                    <p class="intro__p" style="font-size: 24px;">
+                    <h3>전문가에게 배우는 당신도 이미 전문가</h3>
+                    <h4>현장의 기술을 지금 바로 배워보세요.</h4>
+                    </p>
+                </div><!-- </div> intro__main 끝 -->
+            </div> <!-- </div> intro 끝 -->
+
+            <div id="review">
+                <ul>
+                    <li class="review01">
+                        <img src="./img/review_img01.jpg" alt="review__img01" class="review_img01">
+                        <p class="review__p">언제까지 현재 회사를 계속 다닐 수 있을까<br>
+                            고민하다가 광고를 보고 플로티치 강의를 들었어요.<br>
+                            전문가의 노하우로 새로운 직업을 가질 수 있게 되었어요.</p>
+                    </li>
+                    <li class="review02">
+                        <p class="review__p">이직하고 싶은데 방법을 모르겠더라고요.<br>
+                            플로티치 강사님 설명이 너무 이해가 쉬워 이직이 쉬워졌습니다.</p>
+                        <img src="./img/review_img02.jpg" alt="review__img02" class="review_img02">
+                    </li>
+                    <li class="review03">
+                        <img src="./img/review_img03.jpg" alt="review__img03" class="review_img03">
+                        <p class="review__p">요즘 회사에서 실수가 많아 쭈구리처럼 일하고 자신감이 없었어요.<br>
+                            스킬이 부족해 야근도 피할 수 없었어요.<br>
+                            요즘은 시간이 남아요. 차기 승진 기회를 노려봅니다.</p>
+                    </li>
+                    <li> <br>
+                        <h5 style="color: white;"> - 이런 분들께 추천드려요 - </h5>
+                        <p class="review04" style="color: white;"><br>
+                            빠른 업무로 남들 일할 때 쉬고 싶은 직장인<br>
+                            수능이 끝났어도 열정은 끝나지 않은 수험생<br>
+                            취미도 효율적으로 즐기고 싶다면 추천합니다.
+                            <br><br>
+                            효율적인 업무시간으로 월급루팡이 되어보세요.<br>
+                            시험이 없는 정말 원하는 강의를 들어보세요.<br>
+                            취미도 효율적으로 즐겨보세요.
+                        </p>
+                    </li>
+                </ul>
+            </div> <!-- </div> review 끝 -->
+        </div> <!-- </div> top 끝 -->
+
+        <div id="middle__1">
+            <div id="event1" class="slow-fade-in01">
+                <h2>직장인을 위한 전 강의 15일 무료체험</h2><br>
+                <p>내일의 새로운 전문가를 바로 당신입니다.</p><br>
+
+                <div id="event1__box">
+                    <b>누구나 도전할 수 있는 난이도별 강의로<br>
+                        단기간에 만족한 결과를 느껴보세요. </b><br>
+                    <b>직장인을 위한 컴팩트한 강의시간</b><br><br>
+                    <p>1강의당 최대 20분!<br>출퇴근 시간만 집중으로도 충분합니다.</p>
+                </div> <!-- </div> event1__box 끝 -->
+            </div> <!-- </div> event1 끝 -->
+
+            <div id="event2" class="slow-fade-in02">
+                <h2>수험생을 위한 전 강의 15일 무료체험</h2><br>
+                <p>학교 공부와는 다른 강의로 새로운 재미를 느껴보세요. </p><br>
+
+                <div id="event2__box">
+                    <b>누구나 도전할 수 있는 난이도별 강의로<br>
+                        단기간에 만족한 결과를 느껴보세요. </b><br>
+                    <b>수험생을 위한 컴팩트한 강의시간</b><br><br>
+                    <p>1강의당 최대 20분!<br>학교처럼 오래 앉아있지 않아도 되요.</p>
+                </div> <!-- </div> event2__box 끝 -->
+            </div> <!-- </div> event2 끝 -->
+        </div> <!-- </div> middle__1 끝 -->
+
+        <div id="middle__2">
+            <div id="event3">
+                <div class="event3__box1 front">
+                    <!-- <div id="event3" class="slow-fade-in03 up"> -->
+                    <h2>15일 프리패스 (직장인 버전)</h2>
+                    * 마우스를 올려보세요 *
+                </div>
+
+                <div class="event3__box2 back">
+                    <p>직장인이라면 누구나 15일간 무제한 수강해보세요!<br><br>
+                        참여자 전원에게 해당하는 이벤트입니다.<br><br>
+                        # 유의사항 : 직장인 인증을 위해 <br>
+                        수강생의 명함 사진을 고객센터 이메일로 보내주세요. #</p>
+                    <br>
+                    <a class="button" href="./login.html">15일 무료체험 신청하기</a>
+                </div> <!-- </div> event3__box 끝 -->
+            </div> <!-- </div> event3 끝 -->
+
+            <div id="event4">
+                <div class="event4__box1 front">
+                    <h2>15일 프리패스(수험생 버전)</h2>
+                    * 마우스를 올려보세요 *
+                </div>
+
+                <div class="event4__box2 back">
+                    <p>수험생이라면 누구나 15일간 무제한 수강해보세요!</p>
+                    <p>참여자 전원에게 해당하는 이벤트입니다.<br>
+                    <p># 유의사항 : 수험생 인증을 위해 <br>
+                        수강생의 수험표 사진을 고객센터 이메일로 보내주세요. #</p>
+                    <br>
+                    <a class="button" href="./login.html">15일 무료체험 신청하기</a>
+                </div> <!-- </div> event4__box 끝 -->
+            </div>
+        </div> <!-- </div> event4 끝 -->
+
+        <div id="event5">
+            <h2>강의 체험 후기 작성하고<br><span id="tx__2">15일 연장 혜택</span>을 누려보세요.</h2>
+            <br>
+            <p><span id="tx__4">15일 무료수강</span>을 체험하시고 후기를 작성하여 주세요.<br>
+                우수 후기로 선정된 3인에게는 <br>
+                스타벅스 아메리카노 교환권을 보내드립니다.</p>
+
+            <p style="font-size: 25px;"><b><span id="tx__3" style="color:rgb(254, 115, 115); font-weight: bold;">참여자
+                        전원</span>에게 이 모든걸
+                    드립니다.</b><br><br>
+                1. 15일 연장 혜택<br>
+                직장인, 수험생을 위해 준비된 혜택을 모두 누리세요.<br><br>
+
+                2. 스타벅스 아메리카노 교환권 1장<br>
+                공부할 때 카페인 충전은 플로티치가 채워드릴게요.<br><br>
+
+                3. 공부도 장비빨 받는거 아시죠!<br>
+                카카오프렌즈가 그려진 문구용품으로 눈이 즐거워 지시길 바라요.</p>
+            <div id="event5__box" class="h1">
+            </div> <!-- </div> event5__box 끝 -->
+        </div> <!-- </div> event5 끝 -->
+        </div><!-- </div> middle__2 끝 -->
+
+        <div id="bottom">
+            <div class="warning gradient-box">
+                <p style="font-size: 25px;"> ** 진행기간 : 2023년 12월 1일 ~ 2024년 2월 28일<br><br>
+                    ** 상품명 : [플로티치] [직장인,수험생] 15일 체험<br><br>
+                    <br><br>
+                    ** 후기 이벤트 당첨 발표 : 2024년 3월 15일
+                    <br><br>
+                    ** 유의사항 : <br>
+                    1. 본 이벤트는 플로티치에 가입되어 있는 회원들만 혜택을 받으실 수 있습니다.<br>
+                    2. 무료 강의 혜택은 발급 후 15일동안 사용가능하며, 15일 후 자동 소멸됩니다.<br>
+                    3. 유의사항을 읽지 않고 발생한 모든 상황에 대해서는 책임지지 않습니다.<br>
+                    4. 1544로 시작되는 번호로 상품이 증정되며, 해당 번호 차단 등 개인적인 사유로 상품 미수령시 재발송은 불가능합니다.<br>
+                    5. 상품은 자사 사정으로 인해 사전에 공지없이 동일한 금액 대의 다른 상품으로 변경될 수 있습니다.<br>
+                </p>
+            </div> <!-- </div> warning 끝 -->
+        </div> <!-- </div> bottom 끝 -->
+
+        <div>
+            <a class="arrow__top" id="arrow__top" href="#" onclick="arrow__top()">
+                <button id="scrollBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg></button>
+            </a>
+        </div>
+    </main>
+
+    <!-- footer 시작 -->
+    <footer>
+        <div class="footertest">
+            <ul class="footer__info">
+                <li class="footer_title">고객센터</li>
+                <li>10:00~18:30</li>
+                <li>주말,공유일 휴무</li>
+                <li><input type="button" value="1:1문의" id="footer__button" /></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">플로티치</li>
+                <li><a href="main.html">플로티치 메인</a></li>
+                <li><a href="semi_event.html">이벤트</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">관련 사이트</li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">GIT</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">KH</a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer_title">지원</li>
+                <li><a href="announcement.html">공지사항</a></li>
+                <li><a href="FAQ.html">자주 묻는 질문</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전문가 센터</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="reserve">
+            KDH서울시 강남구 역전로로 157, 100층대표 : OOO, OOO 개인정보관리책임자 : OOO 이사업자등록번호 : 111-11-11111<br>
+            통신판매업신고 : 1111-서울강남-1111 유료직업소개사업등록번호 : 제1111-1111111-11-1-111111호고객센터 : 1544-1544help@flowteach.com
+        </div>
+    </footer>
+</body>
+
+</html>

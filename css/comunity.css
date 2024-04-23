@@ -1,0 +1,224 @@
+/* 폰트 */
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'JalnanGothic';
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #fff;
+}
+/*  */
+
+/* nav */
+.btn {
+
+    background-color: black;
+}
+
+.dropdown {
+    padding-top: 10px;
+}
+
+nav {
+    margin-top: 100px;
+    height: 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.nav__menu {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 0px;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.padingtest {
+    color: white;
+    margin-bottom: 100px;
+}
+
+.padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+}
+
+/* 커뮤니티 목록 */
+.co_board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+    
+}
+
+.co_board_title {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.co_board_title h1 {
+    font-size: 4rem;
+    margin-top: 200px;
+    
+}
+
+.co_board_title p {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.co_bt_wrap {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 0px;
+}
+
+
+.co_board_list {
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 100px;
+}
+
+.co_board_list>div {
+    border-bottom: 1px solid gainsboro;
+    font-size: 0;
+}
+
+.co_board_list>div.top {
+    border-bottom: 1px solid gray;
+}
+
+.co_board_list>div:last-child {
+    border-bottom: 2px solid black;
+}
+
+.co_board_list>div>div {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 15px 0px;
+}
+
+.co_board_list .number {
+    width: 10%;
+}
+
+.co_board_list .title {
+    width: 60%;
+    text-align: left;
+}
+
+.co_board_list .top .title {
+    text-align: center;
+}
+
+.co_board_list .writer {
+    width: 10%;
+}
+
+.co_board_list .date {
+    width: 10%;
+}
+
+.co_board_list .count {
+    width: 10%;
+}
+
+.co_board_list>div.top>div {
+    font-weight: 600;
+    
+}
+/* 페이지버튼 */
+ul,
+li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.co_board_page {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.co_board_page a {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    border: 1px solid gainsboro;
+    border-left: 0;
+    vertical-align: middle;
+    line-height: 100%;
+    align-items: center;
+    padding-top: 23px;
+}
+
+.co_board_page a.bt {
+    font-size: 1.2rem;
+    padding-top: 23px;
+}
+
+.co_board_page a.num {
+    font-size: 1.4rem;
+    padding-top: 23px;
+}
+
+.co_board_page a:first-child {
+    border-left: 1px solid gainsboro;
+}
+
+.co_board_page a.num.on {
+    
+    background-color: #fff;
+    color: black;
+}
+.co_bt_wrap a {
+    margin-left: 10px;
+    display: inline-block;
+    min-width: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.co_bt_wrap a:first-child {
+    left: 0;
+}
+
+.co_bt_wrap a.btn {
+    background-color: #2a69fa;
+    color: white;
+}
+
+/* 글제목 hover */
+#check:hover a {
+    color: purple;
+}

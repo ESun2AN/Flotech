@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* nav */
+.btn{
+    
+    background-color: black;
+}
+.dropdown{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu, dropdown-item{
+        
+    background-color: black;
+}
+
+nav{
+    
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+
+}
+
+.nav__menu{
+  font-family: 'JalnanGothic';
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.padingtest01{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.padingtest{
+ 
+    color: white;
+    
+  }
+ .padingtest:hover {
+    color: #2a69fa;
+    font-size: 1.2em;
+  }
+
+  /* 마이페이지 회원정보수정 시작 */
+body{
+    padding-top: 70px;
+    background-color: black;
+    margin: 0px;
+    color: black;
+}
+.mypage02{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 500px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    /* border-radius: 10px; */
+   
+}
+.mypage02__{
+    width: 700px;
+    margin-bottom: 15px;
+    /* padding: 30px; */
+    
+
+}
+.mypage02__head{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.mypage02__head__click{
+    font-weight: bold;
+    /* color: black; */
+}
+.mypage02__head__click:hover{
+    text-decoration: none;
+}
+
+#mypage02_cl2{
+    color: white;
+}
+
+table{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+td{
+    height: 30px;
+}
+
+.mypage02__input__ti{
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.mypage02__btn__box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: end;
+    
+}
+#mypage02__btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a69fa;
+    color: black;
+    font-family: 'JalnanGothic';
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+#mypage02__btn:hover{
+    opacity: 0.8;
+}
+
+.mypage02__input__id{
+    border:1px solid lightgrey;
+    outline: none;
+    width: 185px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.mypage02__input__text{
+    border:1px solid lightgrey;
+    outline: none;
+    width: 185px;
+    border-radius: 5px;
+    font-family: 'NanumGothic';
+    font-size: 17px;
+}
+.mypage02__input__text:focus{
+    border: 1px solid #2a69fa;
+    outline: none;
+    box-shadow: 0 0 3px #2a69fa;
+}
+.mypage02__input__pw{
+    border:1px solid lightgrey;
+    outline: none;
+    width: 185px;
+    border-radius: 5px;
+    font-family: 'NanumGothic';
+    font-size: 17px;
+}
+.mypage02__input__pw:focus{
+    border: 1px solid #2a69fa;
+    outline: none;
+    box-shadow: 0 0 3px #2a69fa;
+}
+#mypage02__btn__agr{
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+#mypage02_cl{
+    color: #2a69fa;
+}
+
+/* 스크롤버튼 css */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    color: #2a69fa;
+    
+  background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
